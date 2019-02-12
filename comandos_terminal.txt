@@ -1,0 +1,39 @@
+010.Criar projeto e Deploy Android - Windows
+
+#Criar variavel de ambiente
+ANDROID_HOME = [CAMINHO_DO_SDK]
+
+#Adicionar caminhos na variavel PATH do sitema
+[CAMINHO_DO_SDK]\emulator
+[CAMINHO_DO_SDK]\tools
+[CAMINHO_DO_SDK]\tools\bin
+[CAMINHO_DO_SDK]\platform-tools
+
+#Verificar versao do abd
+adb --version
+
+#Verificar versao do emulador
+emulator -version 
+
+#Aceitar licencas do sdkmanager
+sdkmanager --licenses 
+{ ir digitando Y para aceitar }
+
+#Listar emuladores disponiveis
+emulator -list-avds
+
+#Startar emulador escolhido
+emulator -no-snapshot -avd [NOME_DO_EMULADOR]
+
+----------------------------
+
+#Instalando o ReactNative-CLI globalmente
+{ Node precisa estar instalado e funcionando }
+npm i -g react-native-cli
+
+#Iniciar um projeto com react-native-cli
+react-native init [NOME_PROJETO]
+
+#Rodar aplicacao react-native no android-emulador
+react-native run-android
+

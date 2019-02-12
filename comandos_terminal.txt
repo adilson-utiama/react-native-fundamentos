@@ -37,3 +37,22 @@ react-native init [NOME_PROJETO]
 #Rodar aplicacao react-native no android-emulador
 react-native run-android
 
+-----------------------------
+
+#Utilizando Expo-CLI
+#{ Create React Native App has been merged with Expo CLI }
+#-> Rodando app react-native sem o AndroidStudio
+
+#instalar o create-react-native-app 
+npm i -g create-react-native-app
+
+#Criar um projeto com create-react-netive-app
+create-react-native-app [NOME_PROJETO]
+->Eventualmente ira pedir para instalar o pacote do expo-cli
+->Instale o expo no aparelho android (fisico)
+
+#Startar projeto
+#npm start
+->ira aparecer um qrcode que devera ser lido pelo App instalado no Android
+->O aparelho devera estar na mesma rede onde o App esta sendo executado
+

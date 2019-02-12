@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import Simples from './components/Simples'
+
 export default class App extends Component {
   render() {
-    return(
+    return (
       <View style={ styles.container }>
-        <Text style={ styles.f40 }>Modificando o Componente App (Baseado em Classe)!</Text>
+          <Simples texto="Componente baseado em Função" />
       </View>
-    ) 
+    )
   }
 }
 
@@ -18,9 +20,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
-  },
-  f40: {
-    fontSize: 40
   }
-  
+
 });

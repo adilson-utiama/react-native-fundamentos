@@ -37,6 +37,12 @@ react-native init [NOME_PROJETO]
 #Rodar aplicacao react-native no android-emulador
 react-native run-android
 
+#Escolhendo um device real
+#Para saber o nome do device -> adb devices
+react-native run-android <DEVICE_NAME> 
+
+#OBS: dependendo da versao do gradle, sera necessario atualiza-lo, caso contrario o build vai falhar
+
 -----------------------------
 
 #Utilizando Expo-CLI
@@ -46,7 +52,7 @@ react-native run-android
 #instalar o create-react-native-app 
 npm i -g create-react-native-app
 
-#Criar um projeto com create-react-netive-app
+#Criar um projeto com create-react-native-app
 create-react-native-app [NOME_PROJETO]
 ->Eventualmente ira pedir para instalar o pacote do expo-cli
 ->Instale o expo no aparelho android (fisico)

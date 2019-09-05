@@ -62,3 +62,9 @@ create-react-native-app [NOME_PROJETO]
 ->ira aparecer um qrcode que devera ser lido pelo App instalado no Android
 ->O aparelho devera estar na mesma rede onde o App esta sendo executado
 
+
+-----------------------------------
+
+#Comando para linkar automaticamente ao projeto - bibliotecas de terceiro e assets
+#em package.json, referenciar a biblioteca ou recurso e depois executar comando
+react-native link

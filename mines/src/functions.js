@@ -51,7 +51,7 @@ const cloneboard = board => {
 //Verifica as linhas e colunas ao redor do campo
 const getNeighbors = (board, row, column) => {
     const neighbors = []
-    const rows = [row - 1, roww, row + 1]
+    const rows = [row - 1, row, row + 1]
     const columns = [column - 1, column, column + 1]
     rows.forEach(r => {
         columns.forEach(c => {
@@ -84,7 +84,7 @@ const openField = (board, row, column) => {
                 .forEach(n => openField(board, n.row, n.column))
         } else {
             const neighbors = getNeighbors(board, row, column)
-            field.nearMines = neighbors.filter(m => n.mined).length
+            field.nearMines = neighbors.filter(n => n.mined).length
         }
     }
 }

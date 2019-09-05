@@ -56,8 +56,8 @@ const getNeighbors = (board, row, column) => {
     rows.forEach(r => {
         columns.forEach(c => {
             const different = r !== row || c !== column
-            const validRow = r >= 0 && board.length
-            const validColumn = c >= 0 && board[0].length
+            const validRow = r >= 0 && r < board.length
+            const validColumn = c >= 0 && c < board[0].length
             if(different && validRow && validColumn) {
                 neighbors.push(board[r][c])
             }
@@ -105,11 +105,18 @@ const wonGame = board => fields(board).filter(pendding).length === 0
 const showMines = board => fields(board).filter(field => field.mined)
     .forEach(field => field.opened = true)
 
+//Marca ou desmarca campo com flag  
+const invertFlags = (board, row, column) => {
+    const field = board[row][column]
+    field.flagged = !field.flagged
+}
+
 export { 
     createMinedBoard,
     cloneboard,
     openField,
     hasExplosion,
     wonGame,
-    showMines
+    showMines,
+    invertFlags
 }

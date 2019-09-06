@@ -68,3 +68,9 @@ create-react-native-app [NOME_PROJETO]
 #Comando para linkar automaticamente ao projeto - bibliotecas de terceiro e assets
 #em package.json, referenciar a biblioteca ou recurso e depois executar comando
 react-native link
+
+
+######## NPM DEPENDENCIES (Project Tasks)
+
+#Moment: A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
+npm i -s moment

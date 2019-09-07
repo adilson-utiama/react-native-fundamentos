@@ -1,0 +1,62 @@
+====WEB
+
+#Express: Fast, unopinionated, minimalist web framework for node.
+-> npm i -s express@4.16.3
+
+#Body-Parser: Node.js body parsing middleware.
+Parse incoming request bodies in a middleware before your handlers, available under the req.body property.
+-> npm i -s body-parser@1.18.3
+
+#Cors: CORS is a node.js package for providing 
+a Connect/Express middleware that can be used to enable CORS with various options.
+-> npm i -s cors@2.8.4
+
+#Consign: Autoload your scripts! the successor to express-load
+Consign makes applications easier to develop with logical file separation and automatic script loading.
+Consign can be used to autoload models, routes, schemas, configs, controllers, object maps... etc...
+-> npm i -s consign@0.1.6
+
+====Security
+
+#Bcrypt-NodeJS: Native JS implementation of BCrypt for Node
+-> npm i -s bcrypt-nodejs@0.0.3
+
+#Jwt-Simple: JWT(JSON Web Token) encode and decode module for node.js.
+-> npm i -s jwt-simple@0.5.1
+
+#Passport: Passport is Express-compatible authentication middleware for Node.js.
+-> npm i -s passport@0.4.0
+
+#Passport-Jwt: A Passport strategy for authenticating with a JSON Web Token.
+This module lets you authenticate endpoints using a JSON web token.
+It is intended to be used to secure RESTful endpoints without sessions.
+-> npm i -s passport-jwt@4.0.0
+
+=====DATABASE
+
+#Knex: A batteries-included, multi-dialect (MSSQL, MySQL, PostgreSQL, SQLite3, Oracle 
+(including Oracle Wallet Authentication)) query builder for Node.js.
+-> npm i -s knex@0.15.2
+
+#Pg: Non-blocking PostgreSQL client for Node.js. Pure JavaScript and optional native libpq bindings.
+-> npm i -s pg@7.4.3
+
+
+====UTIL
+
+#Moment: A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
+-> npm i -s moment@2.22.2
+
+#Nodemon: nodemon is a tool that helps develop node.js based 
+applications by automatically restarting the node application when file changes in the directory are detected.
+-> npm i -save-dev nodemon@1.18.4
+
+=====ALTERNATIVE
+
+#Pm2: Advanced, production process manager for Node.js
+PM2 is a production process manager for Node.js 
+applications with a built-in load balancer. 
+It allows you to keep applications alive forever, 
+to reload them without downtime and to facilitate common system admin tasks.
+http://pm2.keymetrics.io/
+-> npm install pm2 -g

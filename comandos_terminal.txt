@@ -77,3 +77,9 @@ npm i -s moment
 
 #Vector Icons: Perfect for buttons, logos and nav/tab bars. Easy to extend, style and integrate into your project.
 npm i -s react-native-vector-icons
+
+#react-native-action-button: customizable multi-action-button component for react-native
+npm i -s react-native-action-button
+
+#React-Native-SWipeable: A powerful React Native swipe component. Supports both iOS and Android.
+npm i -s react-native-swipeable

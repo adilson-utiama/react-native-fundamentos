@@ -1,0 +1,19 @@
+#Listando databases
+\l
+
+#Criar Database 
+CREATE DATABASE tasks;
+
+#Conectar ao database 
+\c tasks
+
+#Instalando knex globalmente
+npm i -g knex@@0.15.2
+
+#Gerar arquivo knexfile.js
+#Dentro da pasta do projeto
+knex init
+
+#Migrations (no terminal)
+knex migrate:make create_table_users
+knex migrate:make create_table_tasks

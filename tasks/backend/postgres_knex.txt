@@ -17,3 +17,9 @@ knex init
 #Migrations (no terminal)
 knex migrate:make create_table_users
 knex migrate:make create_table_tasks
+
+#Executar as Migrations
+knex migrate:latest
+
+#Rollback
+knex migrate:rollback

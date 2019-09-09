@@ -1,5 +1,5 @@
 //Modelo do arquivo .env
 
 module.exports = {
-    authSecret = ''
+    authSecret: ''
 }

@@ -1,0 +1,2 @@
+#React navigation: An extensible yet easy-to-use navigation solution based on Javascript for react-Native
+npm i -s react-navigation

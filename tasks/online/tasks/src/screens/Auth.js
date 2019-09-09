@@ -32,8 +32,8 @@ export default class Auth extends Component {
         return(
             <ImageBackground source={ backgroundImage } style={ styles.background }>
                 <Text style={ styles.title }>Tasks</Text>
-                <View style={ style.formContainer }>
-                    <Text style={ style.subtitle }>
+                <View style={ styles.formContainer }>
+                    <Text style={ styles.subtitle }>
                         { this.state.stageNew ? 'Criar uma Conta' : 'Informe seus dados' }
                     </Text>
                     { this.state.stageNew &&

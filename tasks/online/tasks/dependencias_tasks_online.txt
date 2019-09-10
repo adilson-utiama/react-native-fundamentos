@@ -1,2 +1,6 @@
 #React navigation: An extensible yet easy-to-use navigation solution based on Javascript for react-Native
 npm i -s react-navigation
+
+#React Native Gravatar is a simple component that loads
+the avatar with an option to mask it with a circle, rounded or square shape.
+npm i -s react-native-gravatar@1.0.2
